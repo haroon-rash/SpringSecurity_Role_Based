@@ -10,26 +10,28 @@ public class HomeController {
 
     @GetMapping("/access-denied")
     public String accessDenied() {
-                return "error"; // OR redirect back: return "redirect:/user";
+        return "error"; // OR redirect back: return "redirect:/user";
     }
+
     @GetMapping("/login")
-    public String Login(){
+    public String Login() {
         return "Login";
     }
 
     @GetMapping("/home")
-    public String Home(){
+    public String Home() {
         return "Home";
     }
+
     @GetMapping("/admin")
-    public String admin(){
+    public String admin() {
         return "Admin";
     }
+
     @GetMapping("/user")
-    public String user(){
+    public String user() {
         return "User";
     }
-
 
 
 }
